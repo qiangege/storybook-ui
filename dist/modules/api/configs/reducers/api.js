@@ -22,7 +22,7 @@ exports.ensureStory = ensureStory;
 exports.jumpToStory = jumpToStory;
 
 exports.default = function () {
-  var state = arguments.length <= 0 || arguments[0] === undefined ? defaultState : arguments[0];
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultState;
   var action = arguments[1];
 
   switch (action.type) {

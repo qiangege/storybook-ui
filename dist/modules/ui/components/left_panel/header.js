@@ -4,10 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = require('babel-runtime/helpers/extends');
-
-var _extends3 = _interopRequireDefault(_extends2);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -17,25 +13,36 @@ var _theme = require('../theme');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var wrapperStyle = {
-  background: '#F7F7F7',
+  background: '#ffffff',
   marginBottom: 10
 };
 
-var headingStyle = (0, _extends3.default)({}, _theme.baseFonts, {
-  textTransform: 'uppercase',
-  letterSpacing: '1.5px',
-  fontSize: '12px',
-  fontWeight: 'bolder',
-  color: '#828282',
-  border: '1px solid #C1C1C1',
+var headingStyle = {
+  // ...baseFonts,
+  // textTransform: 'uppercase',
+  // letterSpacing: '1.5px',
+  // fontSize: '12px',
+  // fontWeight: 'bolder',
+  // color: '#828282',
+  // border: '1px solid #C1C1C1',
   textAlign: 'center',
-  borderRadius: '2px',
-  padding: '5px',
-  cursor: 'pointer',
+  // borderRadius: '2px',
+  // padding: '5px',
+  // cursor: 'pointer',
   margin: 0,
-  float: 'none',
-  overflow: 'hidden'
-});
+  // float: 'none',
+  // overflow: 'hidden'
+  fontFamily: 'PingFangSC-Regular',
+  fontSize: '12px',
+  color: '#36434d',
+  lineHeight: '20px',
+  background: '#f5f8fa',
+  boxShadow: '0px 1px 2px 0px rgba(0,0,0,0.30)',
+  borderRadius: '2px',
+  width: '146px',
+  height: '20px',
+  padding: '7px 0'
+};
 
 var shortcutIconStyle = {
   textTransform: 'uppercase',
@@ -71,7 +78,7 @@ var Header = function Header(_ref) {
     _react2.default.createElement(
       'button',
       { style: shortcutIconStyle, onClick: openShortcutsHelp },
-      '⌘'
+      '\u2318'
     ),
     _react2.default.createElement(
       'a',

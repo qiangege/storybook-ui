@@ -60,13 +60,13 @@ var Content = exports.Content = function Content() {
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌘ ⇧ P'
+        '\u2318 \u21E7 P'
       ),
-      ' /  ',
+      ' / \xA0',
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌃ ⇧ P'
+        '\u2303 \u21E7 P'
       ),
       'Toggle SearchBox'
     ),
@@ -76,13 +76,13 @@ var Content = exports.Content = function Content() {
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌘ ⇧ J'
+        '\u2318 \u21E7 J'
       ),
-      ' /  ',
+      ' / \xA0',
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌃ ⇧ J'
+        '\u2303 \u21E7 J'
       ),
       'Toggle Action Logger position'
     ),
@@ -92,13 +92,13 @@ var Content = exports.Content = function Content() {
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌘ ⇧ F'
+        '\u2318 \u21E7 F'
       ),
-      ' /  ',
+      ' / \xA0',
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌃ ⇧ F'
+        '\u2303 \u21E7 F'
       ),
       'Toggle Fullscreen Mode'
     ),
@@ -108,13 +108,13 @@ var Content = exports.Content = function Content() {
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌘ ⇧ L'
+        '\u2318 \u21E7 L'
       ),
-      ' /  ',
+      ' / \xA0',
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌃ ⇧ L'
+        '\u2303 \u21E7 L'
       ),
       'Toggle Left Panel'
     ),
@@ -124,13 +124,13 @@ var Content = exports.Content = function Content() {
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌘ ⇧ D'
+        '\u2318 \u21E7 D'
       ),
-      ' /  ',
+      ' / \xA0',
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌃ ⇧ D'
+        '\u2303 \u21E7 D'
       ),
       'Toggle Down Panel'
     ),
@@ -140,13 +140,13 @@ var Content = exports.Content = function Content() {
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌘ ⇧ → '
+        '\u2318 \u21E7 \u2192 '
       ),
-      ' /  ',
+      ' / \xA0',
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌃ ⇧ → '
+        '\u2303 \u21E7 \u2192 '
       ),
       'Next Story'
     ),
@@ -156,13 +156,13 @@ var Content = exports.Content = function Content() {
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌘ ⇧ ← '
+        '\u2318 \u21E7 \u2190 '
       ),
-      ' /  ',
+      ' / \xA0',
       _react2.default.createElement(
         'b',
         { style: commandStyle },
-        '⌃ ⇧ ← '
+        '\u2303 \u21E7 \u2190 '
       ),
       'Previous Story'
     )

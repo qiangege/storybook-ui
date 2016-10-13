@@ -34,6 +34,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _theme = require('../theme');
 
+var _Search = require('@beisen/Search');
+
+var _Search2 = _interopRequireDefault(_Search);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mainStyle = (0, _extends3.default)({}, _theme.baseFonts, {
@@ -48,7 +52,7 @@ var TextFilter = function (_React$Component) {
   function TextFilter(props) {
     (0, _classCallCheck3.default)(this, TextFilter);
 
-    var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(TextFilter).call(this, props));
+    var _this = (0, _possibleConstructorReturn3.default)(this, (TextFilter.__proto__ || (0, _getPrototypeOf2.default)(TextFilter)).call(this, props));
 
     _this.state = {
       query: ''
@@ -110,20 +114,25 @@ var TextFilter = function (_React$Component) {
         fontSize: 20
       };
 
+      // 为了使用@beisen/Search组件，建date传入组件
+      var searchData = {
+        "placeholder": "Filter" /**没有值的时候显示的内容(string)**/
+        , "iconName": "icon-sousuo" /**IconName 文字前面的图标**/
+        , "value": this.props.text || '' //搜索框中的默认值
+        , "active": true //input框激活
+        , "hidden": false //隐藏搜索框
+        , "readonly": false //搜索框只读
+        , "disabled": false //搜索框禁用
+        , "onChange": this.onChange
+      };
+
       return _react2.default.createElement(
         'div',
         { style: mainStyle },
         _react2.default.createElement(
           'div',
           { style: textWrapStyle },
-          _react2.default.createElement('input', {
-            style: textStyle,
-            type: 'text',
-            placeholder: 'Filter',
-            name: 'filter-text',
-            value: this.props.text || '',
-            onChange: this.onChange
-          })
+          _react2.default.createElement(_Search2.default, searchData)
         ),
         this.state.query && this.state.query.length && _react2.default.createElement(
           'div',
@@ -132,7 +141,7 @@ var TextFilter = function (_React$Component) {
             onClick: this.fireOnClear,
             className: 'clear'
           },
-          '×'
+          '\xD7'
         )
       );
     }

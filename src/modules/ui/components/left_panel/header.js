@@ -2,25 +2,35 @@ import React from 'react';
 import { baseFonts } from '../theme';
 
 const wrapperStyle = {
-  background: '#F7F7F7',
+  background: '#ffffff',
   marginBottom: 10,
 };
 
 const headingStyle = {
-  ...baseFonts,
-  textTransform: 'uppercase',
-  letterSpacing: '1.5px',
-  fontSize: '12px',
-  fontWeight: 'bolder',
-  color: '#828282',
-  border: '1px solid #C1C1C1',
+  // ...baseFonts,
+  // textTransform: 'uppercase',
+  // letterSpacing: '1.5px',
+  // fontSize: '12px',
+  // fontWeight: 'bolder',
+  // color: '#828282',
+  // border: '1px solid #C1C1C1',
   textAlign: 'center',
-  borderRadius: '2px',
-  padding: '5px',
-  cursor: 'pointer',
+  // borderRadius: '2px',
+  // padding: '5px',
+  // cursor: 'pointer',
   margin: 0,
-  float: 'none',
-  overflow: 'hidden',
+  // float: 'none',
+  // overflow: 'hidden'
+  fontFamily:'PingFangSC-Regular',
+  fontSize:'12px',
+  color:'#36434d',
+  lineHeight:'20px',
+  background:'#f5f8fa',
+  boxShadow:'0px 1px 2px 0px rgba(0,0,0,0.30)',
+  borderRadius:'2px',
+  width:'146px',
+  height:'20px',
+  padding:'7px 0'
 };
 
 const shortcutIconStyle = {

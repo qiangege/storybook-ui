@@ -1,5 +1,6 @@
 import React from 'react';
 import { baseFonts } from '../theme';
+import Search from '@beisen/Search'
 
 const mainStyle = {
   ...baseFonts,
@@ -65,17 +66,23 @@ export default class TextFilter extends React.Component {
       fontSize: 20,
     };
 
+    // 为了使用@beisen/Search组件，建date传入组件
+    const searchData = {
+      "placeholder":"Filter"        /**没有值的时候显示的内容(string)**/
+      ,"iconName":"icon-sousuo"     /**IconName 文字前面的图标**/
+      ,"value":this.props.text || ''  //搜索框中的默认值
+      ,"active":true //input框激活
+      ,"hidden":false             //隐藏搜索框
+      ,"readonly":false           //搜索框只读
+      ,"disabled":false           //搜索框禁用
+      ,"onChange":this.onChange
+    }
+
+
     return (
       <div style={mainStyle} >
         <div style={textWrapStyle} >
-          <input
-            style={textStyle}
-            type="text"
-            placeholder="Filter"
-            name="filter-text"
-            value={this.props.text || ''}
-            onChange={this.onChange}
-          />
+            <Search {...searchData} />
         </div>
         {
           this.state.query && this.state.query.length && <div
