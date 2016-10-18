@@ -34,9 +34,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _theme = require('../theme');
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Search = require('@beisen/Search');
 
-// import Search from '@beisen/Search'
+var _Search2 = _interopRequireDefault(_Search);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mainStyle = (0, _extends3.default)({}, _theme.baseFonts, {
   border: '1px solid #ECECEC',
@@ -130,14 +132,7 @@ var TextFilter = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { style: textWrapStyle },
-          _react2.default.createElement('input', {
-            style: textStyle,
-            type: 'text',
-            placeholder: 'Filter',
-            name: 'filter-text',
-            value: this.props.text || '',
-            onChange: this.onChange
-          })
+          _react2.default.createElement(_Search2.default, searchData)
         ),
         this.state.query && this.state.query.length && _react2.default.createElement(
           'div',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { baseFonts } from '../theme';
-// import Search from '@beisen/Search'
+import Search from '@beisen/Search'
 
 const mainStyle = {
   ...baseFonts,
@@ -82,14 +82,7 @@ export default class TextFilter extends React.Component {
     return (
       <div style={mainStyle} >
         <div style={textWrapStyle} >
-            <input
-            style={textStyle}
-            type="text"
-            placeholder="Filter"
-            name="filter-text"
-            value={this.props.text || ''}
-            onChange={this.onChange}
-          />
+            <Search {...searchData}/>
         </div>
         {
           this.state.query && this.state.query.length && <div
