@@ -44,7 +44,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var rootStyle = {
   height: '100vh',
-  backgroundColor: '#F7F7F7'
+  backgroundColor: '#f5f8fa'
 };
 
 var fullScreenStyle = {
@@ -58,7 +58,9 @@ var fullScreenStyle = {
 var leftPanelStyle = {
   position: 'absolute',
   width: '100%',
-  height: '100%'
+  height: '100%',
+  backgroundColor: '#ffffff'
+
 };
 
 var downPanelStyle = {
@@ -82,7 +84,7 @@ var previewStyle = {
   width: '100%',
   height: '100%',
   backgroundColor: '#FFF',
-  border: '1px solid #ECECEC',
+  // border: '1px solid #ECECEC',
   borderRadius: 4
 };
 

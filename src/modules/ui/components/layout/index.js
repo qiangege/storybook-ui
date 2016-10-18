@@ -6,7 +6,7 @@ import SplitPane from '@kadira/react-split-pane';
 
 const rootStyle = {
   height: '100vh',
-  backgroundColor: '#F7F7F7',
+  backgroundColor: '#f5f8fa',
 };
 
 const fullScreenStyle = {
@@ -21,6 +21,8 @@ const leftPanelStyle = {
   position: 'absolute',
   width: '100%',
   height: '100%',
+  backgroundColor:'#ffffff'
+
 };
 
 const downPanelStyle = {
@@ -44,7 +46,7 @@ const previewStyle = {
   width: '100%',
   height: '100%',
   backgroundColor: '#FFF',
-  border: '1px solid #ECECEC',
+  // border: '1px solid #ECECEC',
   borderRadius: 4,
 };
 
