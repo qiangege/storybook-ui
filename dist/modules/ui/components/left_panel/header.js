@@ -46,22 +46,29 @@ var headingStyle = {
 
 var shortcutIconStyle = {
   textTransform: 'uppercase',
-  letterSpacing: '3.5px',
-  fontSize: 12,
-  fontWeight: 'bolder',
-  color: 'rgb(130, 130, 130)',
-  border: '1px solid rgb(193, 193, 193)',
+  // letterSpacing: '3.5px',
+  fontSize: 20,
+  // fontWeight: 'bolder',
+  // color: 'rgb(130, 130, 130)',
+  // border: '1px solid rgb(193, 193, 193)',
   textAlign: 'center',
   borderRadius: 2,
-  padding: 5,
+  // padding: 5,
   cursor: 'pointer',
   margin: 0,
   display: 'inlineBlock',
-  paddingLeft: 8,
+  // paddingLeft: 8,
   float: 'right',
-  marginLeft: 5,
-  backgroundColor: 'inherit',
-  outline: 0
+  // marginLeft: 5,
+  backgroundColor: '#f5f8fa',
+  outline: 0,
+  fontFamily: 'PingFangSC-Regular',
+  color: '#36434d',
+  border: '0px',
+  // 阴影
+  boxShadow: '0px 1px 2px 0px rgba(0,0,0,0.30)',
+  width: '34px',
+  height: '34px'
 };
 
 var linkStyle = {
