@@ -68,7 +68,8 @@ var downPanelStyle = {
   position: 'absolute',
   width: '100%',
   height: '100%',
-  padding: '5px 10px 10px 0',
+  // padding: '5px 10px 10px 0',
+  padding: '0px 10px 10px 0',
   boxSizing: 'border-box'
 };
 
@@ -77,7 +78,8 @@ var contentPanelStyle = {
   boxSizing: 'border-box',
   width: '100%',
   height: '100%',
-  padding: '10px 10px 10px 0'
+  // padding: '10px 10px 10px 0',
+  padding: '10px 10px 0px 0'
 };
 
 var previewStyle = {
