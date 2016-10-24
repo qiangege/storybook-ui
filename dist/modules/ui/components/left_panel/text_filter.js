@@ -41,7 +41,7 @@ var _Search2 = _interopRequireDefault(_Search);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mainStyle = (0, _extends3.default)({}, _theme.baseFonts, {
-  border: '1px solid #ECECEC',
+  // border: '1px solid #ECECEC',
   borderRadius: 2,
   position: 'relative'
 });

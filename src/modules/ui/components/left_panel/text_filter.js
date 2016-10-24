@@ -4,7 +4,7 @@ import Search from '@beisen/Search'
 
 const mainStyle = {
   ...baseFonts,
-  border: '1px solid #ECECEC',
+  // border: '1px solid #ECECEC',
   borderRadius: 2,
   position: 'relative',
 };
