@@ -65,7 +65,9 @@ var TextFilter = function (_React$Component) {
 
   (0, _createClass3.default)(TextFilter, [{
     key: 'onChange',
-    value: function onChange(event) {
+    value: function onChange(_ref) {
+      var event = _ref.event;
+
       var text = event.target.value;
       this.setState({ query: text });
       var onChange = this.props.onChange;

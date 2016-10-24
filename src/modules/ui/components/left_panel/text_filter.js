@@ -21,7 +21,7 @@ export default class TextFilter extends React.Component {
     this.fireOnClear = this.fireOnClear.bind(this);
   }
 
-  onChange(event) {
+  onChange({event}) {
     const text = event.target.value;
     this.setState({ query: text });
     const { onChange } = this.props;
