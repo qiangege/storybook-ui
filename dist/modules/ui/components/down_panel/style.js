@@ -37,7 +37,7 @@ exports.default = {
   tabbar: {
     display: 'flex',
     flexWrap: 'wrap',
-    borderBottom: 'solid 1px #eaeaea'
+    borderBottom: 'solid 1px #f5f8fa'
   },
 
   content: {
