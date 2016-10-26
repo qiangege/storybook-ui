@@ -74,7 +74,7 @@ class Layout extends React.Component {
 
   renderNormally() {
     const props = this.props;
-    const leftPanelDefaultSize = props.showLeftPanel ? 250 : 1;
+    const leftPanelDefaultSize = props.showLeftPanel ? 230 : 1;
     let downPanelDefaultSize = 1;
     if (props.showDownPanel) {
       downPanelDefaultSize = props.downPanelInRight ? 400 : 200;

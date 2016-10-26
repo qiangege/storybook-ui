@@ -122,7 +122,7 @@ var Layout = function (_React$Component) {
     key: 'renderNormally',
     value: function renderNormally() {
       var props = this.props;
-      var leftPanelDefaultSize = props.showLeftPanel ? 250 : 1;
+      var leftPanelDefaultSize = props.showLeftPanel ? 230 : 1;
       var downPanelDefaultSize = 1;
       if (props.showDownPanel) {
         downPanelDefaultSize = props.downPanelInRight ? 400 : 200;
