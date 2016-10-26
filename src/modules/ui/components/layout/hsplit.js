@@ -4,8 +4,8 @@ const wrapStyle = {
   cursor: 'row-resize',
   width: '100%',
   height: '10px',
-  marginTop: '8px',
-  marginBottom: '10px',
+  // marginTop: '8px',
+  // marginBottom: '10px',
   position: 'relative',
 };
 
